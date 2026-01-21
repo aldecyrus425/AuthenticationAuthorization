@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "PdTuVGNLMoA=",
+  "dgSpecHash": "/z41m9MoDCs=",
   "success": true,
   "projectFilePath": "C:\\Users\\User\\source\\repos\\AuthorizationAuthentication\\MyApp.Application\\MyApp.Application.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\User\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.12\\microsoft.extensions.dependencyinjection.abstractions.9.0.12.nupkg.sha512"
+  ],
   "logs": []
 }

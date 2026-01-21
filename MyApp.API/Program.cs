@@ -1,4 +1,8 @@
+using MyApp.Infrastructure;
+
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddInfrastructureInjection(builder.Configuration);
 
 // Add services to the container.
 
