@@ -1,5 +1,7 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using MyApp.Infrastructure.Persistence;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,8 +14,11 @@ namespace MyApp.Infrastructure
     {
         public static IServiceCollection AddInfrastructureInjection(this IServiceCollection services, IConfiguration config)
         {
-            
 
+            services.AddDbContext<ApplicationDBContext>(options =>
+            {
+                options.UseSqlServer(config.GetConnectionString("DefaultConnection"));
+            });
 
             return services;
         }
